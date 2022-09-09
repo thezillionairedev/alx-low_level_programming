@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for funnction main goes there */
+/**
+ * main: Determines either greater than 5, is less than 6, or is 0
+ *
+ * Return: always 0 (Success)
+ */
 int main(void)
 {
 	int n;
