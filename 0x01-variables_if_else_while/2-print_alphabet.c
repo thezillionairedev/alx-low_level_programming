@@ -1,16 +1,16 @@
 #include  <stdio.h>
 
 /**
- * main - ENtry Point
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int alphabet;
-	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(tolower(x));
+		putchar(alphabet);
 	}
 		putchar('\n');
 		return (0);
