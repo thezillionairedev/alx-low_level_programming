@@ -4,7 +4,7 @@
  * print_times_table - Prints times table
  * @n: Value to be printed
  *
- * Returns: 0
+ * Returns: void
  */
 void print_times_table(int n)
 {
