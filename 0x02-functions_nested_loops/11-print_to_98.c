@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - Prints all natural numbers
- * @n: Input number
+ * @n: Integer
  *
  * Returns: 0
  */
@@ -15,10 +15,13 @@ void print_to_98(int n)
 		{
 			printf("%d ", n);
 		}
-	}
-	else (for n = n; n > 98; n--)
+	else
 	{
-		printf("%d ", n);
+		for (n = n; n > 98; n--)
+		{
+			printf("%d ", n);
+		}
 	}
 	printf("%d\n");
+	}
 }
