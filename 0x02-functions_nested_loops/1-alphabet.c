@@ -5,7 +5,7 @@
  *
  * Description - Prints lowercase alphabets with new line
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
@@ -15,5 +15,5 @@ void print_alphabet(void)
 	{
 		_putchar(i);
 	}
-_putchar('\n');
+	_putchar('\n');
 }
