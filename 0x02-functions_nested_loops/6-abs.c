@@ -3,7 +3,6 @@
 /**
  * _abs - unction that computes the absolute value of an integer
  * @n: Integer
- *
  * Return: Always 0 (Success)
  */
 int _abs(int n)
