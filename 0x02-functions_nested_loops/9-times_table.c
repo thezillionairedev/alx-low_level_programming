@@ -2,6 +2,7 @@
 
 /**
  * times_table - Prints the 9 times table
+ *
  * Returns: 0
  */
 void times_table(void)
@@ -10,7 +11,7 @@ void times_table(void)
 
 	for (x = 0; x <= 9; x++)
 	{
-		for (y = 0; y <= 9: y++)
+		for (y = 0; y <= 9; y++)
 		{
 			product = x * y;
 			if (y != 0)
