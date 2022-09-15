@@ -7,9 +7,14 @@
  *
  * Return: 1 if charatcer is uppercase, 0 if lowercase
  */
-int is_upper(int c)
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
+	{
 		return (1);
-	return (0);
+	}
+	else
+	{
+		return (0);
+	}
 }	
