@@ -7,28 +7,30 @@
  */
 int str_length(char *s)
 {
-	if (*s != '\0')
-		return (1 + length(s + 1));
-	else
-		return (0);
+	int len = 0;
+
+	if (*(s + len))
+	{
+		len++;
+		len += find_strlen(s + len);
+	}
+	return (len);
 }
 /**
- * compare - compares each character of the string
+ * check_palindrome- Checks if a string is a palindrome
  * @s: string
- * @start: start index
- * @end: end index
- * Return: i if match or 0 no match
+ * @len: The length of s
+ * @index: The index of the string to be checked
+ * Return: 1 if palindrome
+ * 0 not palindrome
  */
-int compare(char *s, int start, int end)
+int check_palindrome(char *s, int len, int index)
 {
-	if (s[start] != s[end])
-		return (0);
-	else if (start == end && s[start] == s[end])
+	if (s[index] == s[len / 2])
 		return (1);
-	else if (start == end - 1 && s[start] == s[end])
-		return (1);
-	else
-		return (compare(s, start + 1, end - 1));
+	if (s[index] == s[len - index - 1])
+		return (check_palindrome(s, len, index + 1));
+	return (0);
 }
 /**
  * is_palindrome - checks is string is a palindrome
@@ -37,14 +39,10 @@ int compare(char *s, int start, int end)
  */
 int is_palindrome(char *s)
 {
-	int len, start, end;
+	int index = 0;
+	int len = str_length(s);
 
-	len = length(s);
-	start = 0;
-	end = len - 1;
-
-	if (len == 0 || len == 1)
+	if (!(*s))
 		return (1);
-	else
-		return (compare(s, start, end));
+	return (check_palindrome(s, len, index));
 }
