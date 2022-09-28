@@ -12,7 +12,7 @@ int str_length(char *s)
 	if (*(s + len))
 	{
 		len++;
-		len += find_strlen(s + len);
+		len += str_length(s + len);
 	}
 	return (len);
 }
