@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * check_int - returns the natural square root of a number.
+ * _sqrt - returns the natural square root of a number.
  * @n: input number
  * @i: iterator
  * Return: square root or -1
  */
-int check_int(int n, int i)
+int _sqrt(int n, int i)
 {
-	int square = i * 1;
+	int square = i * i;
 
 	if (square > n)
 		return (-1);
 	if (square == n)
 		return (i);
-	return (check_int(n, i + 1));
+	return (_sqrt(n, i + 1));
 }
- /**
- * _sqrt_recursion - returns the natural square root of a number
+/**
+ * _sqrt_recursion - returns the natural square root
  * @n: input number
- * Return: natural square root
+ * Return: square root
  */
 int _sqrt_recursion(int n)
 {
-	return (check_int(n, 1));
+	return (_sqrt(n, 1));
 }
