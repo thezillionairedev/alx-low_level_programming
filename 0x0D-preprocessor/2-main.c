@@ -8,5 +8,5 @@
 int main(void)
 {
 	printf("%s\n", __FILE__);
-	retun (0);
+	return (0);
 }
