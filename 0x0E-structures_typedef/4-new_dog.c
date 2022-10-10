@@ -1,4 +1,4 @@
-#include "dohg.h"
+#include "dog.h"
 
 /**
  * *_strcpy - copy string
